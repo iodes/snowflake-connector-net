@@ -290,7 +290,6 @@ namespace Snowflake.Data.Core
                 SnowflakeDbException e = new SnowflakeDbException(
                     "", response.code, response.message, "");
                 logger.Error("Query cancellation failed.", e);
-                throw e;
             }
         }
         
